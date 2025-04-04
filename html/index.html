@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>MinecraftCpp - уникальный экшен</title>
+		<link rel="stylesheet" href="index.css">
+		<link rel="icon" href="fav.ico">
+	</head>
+	<body>
+		<p>
+			<form method="post" action="#">
+				<input type="input" placeholder="Введите логин" />
+				<input type="password" placeholder="Введите пароль" />
+				<input type="submit" value="Войти" />
+			</form>	
+		</p>
+		<input type="submit" value="Войти" />
+		<p>0</p>
+		<script type="module">
+			import {print1} from "./1.js"
+			print1();
+			let value = 0;
+			const submit = document.querySelector('body > input[type="submit"]');
+			const p = document.querySelectorAll("p")[2];
+			submit.addEventListener("click", (e) => {e.preventDefault(); value++; p.innerText = value;});
+			
+		</script>
+	</body>
+</html>
